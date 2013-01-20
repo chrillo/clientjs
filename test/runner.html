@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<!-- Setup Mocha -->
+		<link rel="stylesheet" href="./lib/mocha.css" />
+    	<script src="./lib/mocha.js"></script>
+    	<script>
+
+    		mocha.setup('bdd')
+    	
+    	</script>
+    	<script src="./lib/mocha_helper.js"></script>
+
+    	<!-- Setup Chai -->
+    	<script src="./lib/chai.js"></script>
+    	<script type="text/javascript">
+    		
+    		var should = chai.should()
+
+    	</script>
+
+    	<!-- Setup specs, compiled by grunt-browserify -->
+		<script type="text/javascript" src="./specs.js"></script>	
+	</head>
+	<body>
+
+		<div id="mocha"></div>
+		
+		<script>
+			
+			// run the tests
+			// https://github.com/adomokos/mocha-in-browser
+		    onload = function(){
+		        var runner = mocha.run(); 
+		    }
+
+    	</script>
+
+	</body>
+
+</html>
