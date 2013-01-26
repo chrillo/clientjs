@@ -698,7 +698,7 @@ require.define("/src/js/app.js",function(require,module,exports,__dirname,__file
 
 var App = function(){
 
-		$('body').html(template("index",{name:"app name",module:"module"}))
+		$('body').append(template("index",{name:"app name",module:"module"}))
 
 	}
 

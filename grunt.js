@@ -113,6 +113,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
 
   
+
   // Default task.
   grunt.registerTask('default', 'handlebars less:dev lint browserify');
   grunt.registerTask('dev','default reload')
@@ -125,6 +126,7 @@ module.exports = function(grunt) {
         var express = require('express')
     var app = express()
     app.use(express.static(__dirname+'/public'))
+    app.use(express.static(__dirname + '/test'));
     app.listen(8000).on('close', done);
     grunt.log.writeln('Starting web server on port 8000');
   });

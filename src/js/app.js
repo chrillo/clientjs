@@ -2,7 +2,7 @@ var Module = require('./modules/module')
 
 var App = function(){
 
-		$('body').html(template("index",{name:"app name",module:"module"}))
+		$('body').append(template("index",{name:"app name",module:"module"}))
 
 	}
 
