@@ -1,5 +1,5 @@
-boilerplate setup for building and testing javascript client applications
-=========================================================================
+boilerplate setup for building and testing javascript frontend apps 
+===================================================================
 
 Building
 --------
@@ -16,6 +16,15 @@ Testing
 * testing with mocha and chai
 * all frontend modules can be required and tested individually, allows for actual unit testing thanks to browserify 
 * tests can be run in the browser or with phantomjs
+
+Usage
+-----
+
+* grunt dev compiles the code but does not minfy it
+* grunt test compiles the code and runs all tests
+* grunt prod compiles the code and minifies it
+* grunt watch watches the code and recompiles after changes
+* grund server starts a static file server
 
 
 TODO
