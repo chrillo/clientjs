@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "clientjs",
   "version": "0.0.1",
   "description": "weather application",
   "main": "index.js",
@@ -16,7 +16,6 @@
   "author": "christoph peter",
   "license": "MIT",
   "dependencies": {
-    "express": "~3.0.6"
   },
   "devDependencies": {
     "should": "~1.2.1",
